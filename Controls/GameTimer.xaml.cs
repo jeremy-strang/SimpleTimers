@@ -54,13 +54,14 @@ namespace SimpleTimers.Controls
             {
                 timer.Stop(); // Stop the timer if the progress bar is full
                 timeText.Text = ""; // Clear the text or set to some final message
+                timerWrap.Visibility = Visibility.Collapsed;
             }
         }
 
         public void StartTimer()
         {
             timerLabel.Text = Text;
-            timer1.Visibility = Visibility.Visible;
+            timerWrap.Visibility = Visibility.Visible;
             progressBar.Value = 0;
             startTime = DateTime.Now;
             timer.Start();

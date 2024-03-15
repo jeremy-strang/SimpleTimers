@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Dev\SimpleTimers\App.xaml
-2-1763392685
+4-791867033
 
-6-2129299712
+8-1727375470
 198915248976
-Controls\GameTimer.xaml;MainWindow.xaml;
+Controls\GameTimer.xaml;MainWindow.xaml;Styles\ButtonStyles.xaml;Windows\OverlayWindow.xaml;
 
 False
 

@@ -10,12 +10,21 @@
     <Compile Update="Controls\GameTimer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\OverlayWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\GameTimer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\OverlayWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

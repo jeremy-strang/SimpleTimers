@@ -1,0 +1,91 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SimpleTimers.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Timer1Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Timer2Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Timer3Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Timer4Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Timer5Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Timer1Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Artillery Shrine</Value>
+    </Setting>
+    <Setting Name="Timer2Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Channeling Shrine</Value>
+    </Setting>
+    <Setting Name="Timer3Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Glory Shrine</Value>
+    </Setting>
+    <Setting Name="Timer4Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Timer5Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Timer1Duration" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">57.81</Value>
+    </Setting>
+    <Setting Name="Timer2Duration" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">57.81</Value>
+    </Setting>
+    <Setting Name="Timer3Duration" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">57.81</Value>
+    </Setting>
+    <Setting Name="Timer4Duration" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Timer5Duration" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Timer1ModifierKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">control</Value>
+    </Setting>
+    <Setting Name="Timer2ModifierKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">control</Value>
+    </Setting>
+    <Setting Name="Timer3ModifierKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">control</Value>
+    </Setting>
+    <Setting Name="Timer4ModifierKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Timer5ModifierKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Timer1Keybind" Type="System.String" Scope="User">
+      <Value Profile="(Default)">e</Value>
+    </Setting>
+    <Setting Name="Timer2Keybind" Type="System.String" Scope="User">
+      <Value Profile="(Default)">r</Value>
+    </Setting>
+    <Setting Name="Timer3Keybind" Type="System.String" Scope="User">
+      <Value Profile="(Default)">t</Value>
+    </Setting>
+    <Setting Name="Timer4Keybind" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Timer5Keybind" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OverlayImages" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-1.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-2.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-3.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-4.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-5.png
+</Value>
+    </Setting>
+    <Setting Name="NextOverlayImageKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d</Value>
+    </Setting>
+    <Setting Name="PreviousOverlayImageKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">a</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

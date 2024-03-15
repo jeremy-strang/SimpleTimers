@@ -7,15 +7,27 @@ using System.Reflection.Metadata;
 using System.Windows.Interop;
 using SimpleTimers;
 
+
+public class KeyboardBinding
+{
+    public string? ModifierKey { get; set; }
+    public string Key { get; set; }
+    public Action Callback { get; set; }
+}
+
 public class GlobalKeyboardHook
 {
+    public static List<KeyboardBinding> _keyboardBindings { get; set; }
+
     // Windows API constants and structures
     public delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
     private const int WH_KEYBOARD_LL = 13;
     private const int WM_KEYDOWN = 0x0100;
     private static LowLevelKeyboardProc _proc;
     private static IntPtr _hookID = IntPtr.Zero;
-    private const int VK_CONTROL = 0x11; // Virtual-Key code for the Control key
+
+    private const int VK_SHIFT = 0x10;
+    private const int VK_CONTROL = 0x11;
     private const int VK_A = 0x41;
     private const int VK_B = 0x42;
     private const int VK_C = 0x43;
@@ -42,11 +54,41 @@ public class GlobalKeyboardHook
     private const int VK_X = 0x58;
     private const int VK_Y = 0x59;
     private const int VK_Z = 0x5A;
+    private static Dictionary<int, string> KeyLookup = new Dictionary<int, string>
+    {
+        { VK_A, "a" },
+        { VK_B, "b" },
+        { VK_C, "c" },
+        { VK_D, "d" },
+        { VK_E, "e" },
+        { VK_F, "f" },
+        { VK_G, "g" },
+        { VK_H, "h" },
+        { VK_I, "i" },
+        { VK_J, "j" },
+        { VK_K, "k" },
+        { VK_L, "l" },
+        { VK_M, "m" },
+        { VK_N, "n" },
+        { VK_O, "o" },
+        { VK_P, "p" },
+        { VK_Q, "q" },
+        { VK_R, "r" },
+        { VK_S, "s" },
+        { VK_T, "t" },
+        { VK_U, "u" },
+        { VK_V, "v" },
+        { VK_W, "w" },
+        { VK_X, "x" },
+        { VK_Y, "y" },
+        { VK_Z, "z" },
+    };
 
     // Setting up the hook
-    public static void SetHook()
+    public static void SetHook(List<KeyboardBinding> keyboardBindings)
     {
         _proc = HookCallback;
+        _keyboardBindings = keyboardBindings;
         using (Process curProcess = Process.GetCurrentProcess())
         using (ProcessModule curModule = curProcess.MainModule)
         {
@@ -68,27 +110,21 @@ public class GlobalKeyboardHook
         if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
         {
             int vkCode = Marshal.ReadInt32(lParam);
-            bool controlPressed = (GetKeyState(VK_CONTROL) & 0x8000) != 0; // Check if Control key is down
+            bool controlPressed = (GetKeyState(VK_CONTROL) & 0x8000) != 0;
+            bool shiftPressed = (GetKeyState(VK_SHIFT) & 0x8000) != 0;
 
-            if (controlPressed && vkCode == VK_E)
+            foreach (var binding in _keyboardBindings)
             {
-                // Assuming you have a static reference to your main window
-                Application.Current.Dispatcher.Invoke(() =>
+                bool modPressed =
+                    (controlPressed && binding.ModifierKey == "control") ||
+                    (shiftPressed && binding.ModifierKey == "shift") ||
+                    (!controlPressed && !shiftPressed && binding.ModifierKey == null);
+
+                if (modPressed && KeyLookup.ContainsKey(vkCode) && KeyLookup[vkCode] == binding.Key)
                 {
-                    var mainWindow = Application.Current.MainWindow as MainWindow;
-                    mainWindow?.StartTimer1(); // Call method to start the timer
-                });
-                handled = true;
-            }
-            else if (controlPressed && vkCode == VK_R)
-            {
-                // Assuming you have a static reference to your main window
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    var mainWindow = Application.Current.MainWindow as MainWindow;
-                    mainWindow?.StartTimer2(); // Call method to start the timer
-                });
-                handled = true;
+                    binding.Callback();
+                    handled = true;
+                }
             }
         }
         // If handled, return a non-zero value; otherwise, call the next hook

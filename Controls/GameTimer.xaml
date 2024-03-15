@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="80" d:DesignWidth="400">
     <Grid>
-        <StackPanel VerticalAlignment="Top">
+        <StackPanel Name="timerWrap" VerticalAlignment="Top">
             <TextBlock Name="timerLabel"
                    HorizontalAlignment="Left" 
                    VerticalAlignment="Top"
