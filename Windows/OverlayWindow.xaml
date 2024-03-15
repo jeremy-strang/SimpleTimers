@@ -16,13 +16,13 @@
         Height="1076"
         Topmost="True">
     <Grid>
-        <Label Name="imageIndexLabel" Panel.ZIndex="4" Foreground="White" FontSize="28"
-               HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0.6"></Label>
+        <Label Name="imageIndexLabel" Panel.ZIndex="4" Foreground="White" FontSize="36"
+               VerticalAlignment="Center" HorizontalAlignment="Left"  Opacity="0.6" Margin="0,0,0,0"></Label>
         
         <Image Name="imageDisplay"
-               Opacity="0.3"
+               Opacity="0.35"
                IsHitTestVisible="False"
                MaxHeight="450" MaxWidth="800"
-               VerticalAlignment="Top"/>
+               VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0"/>
     </Grid>
 </Window>

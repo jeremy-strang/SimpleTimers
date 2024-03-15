@@ -18,7 +18,6 @@ C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\refint\SimpleTimers.dll
 C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\SimpleTimers.pdb
 C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\SimpleTimers.genruntimeconfig.cache
 C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\ref\SimpleTimers.dll
-C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\SimpleTimers.csproj.ResolveComReference.cache
 C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\Controls\GameTimer.g.cs
 C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Dev\SimpleTimers\obj\Debug\net8.0-windows\Controls\GameTimer.baml

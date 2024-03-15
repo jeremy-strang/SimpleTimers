@@ -3,7 +3,6 @@ C:\Dev\SimpleTimers\bin\Release\net8.0-windows\SimpleTimers.deps.json
 C:\Dev\SimpleTimers\bin\Release\net8.0-windows\SimpleTimers.runtimeconfig.json
 C:\Dev\SimpleTimers\bin\Release\net8.0-windows\SimpleTimers.dll
 C:\Dev\SimpleTimers\bin\Release\net8.0-windows\SimpleTimers.pdb
-C:\Dev\SimpleTimers\obj\Release\net8.0-windows\SimpleTimers.csproj.ResolveComReference.cache
 C:\Dev\SimpleTimers\obj\Release\net8.0-windows\Controls\GameTimer.g.cs
 C:\Dev\SimpleTimers\obj\Release\net8.0-windows\MainWindow.g.cs
 C:\Dev\SimpleTimers\obj\Release\net8.0-windows\App.g.cs

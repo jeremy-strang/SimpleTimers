@@ -31,7 +31,6 @@ namespace SimpleTimers
             InitializeComponent();
             LoadSettings();
 
-
             GlobalKeyboardHook.SetHook(bindings);
 
             if (Properties.Settings.Default.EnableOverlayImages)
@@ -56,20 +55,26 @@ namespace SimpleTimers
         private void LoadSettings()
         {
             bindings = new List<KeyboardBinding>();
-            
+
+            var settings = Properties.Settings.Default;
+
+
             if (Properties.Settings.Default.EnableOverlayImages)
             {
-                bindings.Add(new KeyboardBinding
-                {
-                    ModifierKey = null,
-                    Key = Properties.Settings.Default.PreviousOverlayImageKey,
-                    Callback = () => overlayWindow.PreviousImage(),
+                string? prevModKey = settings.PreviousImageModifierKey != "" ? settings.PreviousImageModifierKey : null;
+                string? nextModKey = settings.NextImageModifierKey != "" ? settings.NextImageModifierKey : null;
 
-                });
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = null,
-                    Key = Properties.Settings.Default.NextOverlayImageKey,
+                    ModifierKey = prevModKey,
+                    Key = Properties.Settings.Default.PreviousImageKey,
+                    Callback = () => overlayWindow.PreviousImage(),
+                });
+
+                bindings.Add(new KeyboardBinding
+                {
+                    ModifierKey = nextModKey,
+                    Key = Properties.Settings.Default.NextImageKey,
                     Callback = () => overlayWindow.NextImage(),
                 });
                 overlayImages = Properties.Settings.Default.OverlayImages.Split(",").ToList();
@@ -187,5 +192,33 @@ namespace SimpleTimers
         {
 
         }
+
+
+
+        //private void SetWindowPositionToPrimaryMonitor()
+        //{
+        //    // Get the primary screen's working area
+        //    var primaryScreen = Screen.PrimaryScreen.WorkingArea;
+
+        //    // Convert the screen's position from pixels to WPF units
+        //    double dpiX, dpiY;
+        //    var presentationSource = PresentationSource.FromVisual(this);
+        //    if (presentationSource != null) // Ensure the window is connected to a presentation source
+        //    {
+        //        dpiX = 96.0 * presentationSource.CompositionTarget.TransformToDevice.M11;
+        //        dpiY = 96.0 * presentationSource.CompositionTarget.TransformToDevice.M22;
+        //    }
+        //    else
+        //    {
+        //        dpiX = 96.0; // Default DPI; adjust if necessary for your environment
+        //        dpiY = 96.0;
+        //    }
+
+        //    // Set the window's position to the primary monitor
+        //    this.Left = primaryScreen.Left * 96 / dpiX;
+        //    this.Top = primaryScreen.Top * 96 / dpiY;
+        //    this.Width = primaryScreen.Width * 96 / dpiX;
+        //    this.Height = primaryScreen.Height * 96 / dpiY;
+        //}
     }
 }

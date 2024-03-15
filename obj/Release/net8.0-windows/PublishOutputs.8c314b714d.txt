@@ -1,0 +1,6 @@
+C:\Dev\SimpleTimers\bin\Release\net8.0-windows\publish\SimpleTimers.exe
+C:\Dev\SimpleTimers\bin\Release\net8.0-windows\publish\SimpleTimers.dll
+C:\Dev\SimpleTimers\bin\Release\net8.0-windows\publish\SimpleTimers.deps.json
+C:\Dev\SimpleTimers\bin\Release\net8.0-windows\publish\SimpleTimers.runtimeconfig.json
+C:\Dev\SimpleTimers\bin\Release\net8.0-windows\publish\SimpleTimers.dll.config
+C:\Dev\SimpleTimers\bin\Release\net8.0-windows\publish\SimpleTimers.pdb

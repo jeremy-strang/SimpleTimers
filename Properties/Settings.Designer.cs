@@ -338,25 +338,49 @@ namespace SimpleTimers.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("d")]
-        public string NextOverlayImageKey {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NextImageModifierKey {
             get {
-                return ((string)(this["NextOverlayImageKey"]));
+                return ((string)(this["NextImageModifierKey"]));
             }
             set {
-                this["NextOverlayImageKey"] = value;
+                this["NextImageModifierKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("d")]
+        public string NextImageKey {
+            get {
+                return ((string)(this["NextImageKey"]));
+            }
+            set {
+                this["NextImageKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PreviousImageModifierKey {
+            get {
+                return ((string)(this["PreviousImageModifierKey"]));
+            }
+            set {
+                this["PreviousImageModifierKey"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("a")]
-        public string PreviousOverlayImageKey {
+        public string PreviousImageKey {
             get {
-                return ((string)(this["PreviousOverlayImageKey"]));
+                return ((string)(this["PreviousImageKey"]));
             }
             set {
-                this["PreviousOverlayImageKey"] = value;
+                this["PreviousImageKey"] = value;
             }
         }
         
@@ -369,6 +393,42 @@ namespace SimpleTimers.Properties {
             }
             set {
                 this["EnableOverlayImages"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.4")]
+        public double OverlayImageOpacity {
+            get {
+                return ((double)(this["OverlayImageOpacity"]));
+            }
+            set {
+                this["OverlayImageOpacity"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OverlayToggleModifierKey {
+            get {
+                return ((string)(this["OverlayToggleModifierKey"]));
+            }
+            set {
+                this["OverlayToggleModifierKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OverlayToggleKey {
+            get {
+                return ((string)(this["OverlayToggleKey"]));
+            }
+            set {
+                this["OverlayToggleKey"] = value;
             }
         }
     }
