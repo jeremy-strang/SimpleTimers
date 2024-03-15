@@ -359,5 +359,17 @@ namespace SimpleTimers.Properties {
                 this["PreviousOverlayImageKey"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool EnableOverlayImages {
+            get {
+                return ((bool)(this["EnableOverlayImages"]));
+            }
+            set {
+                this["EnableOverlayImages"] = value;
+            }
+        }
     }
 }

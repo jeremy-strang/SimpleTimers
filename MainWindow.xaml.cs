@@ -30,38 +30,50 @@ namespace SimpleTimers
         {
             InitializeComponent();
             LoadSettings();
-            overlayWindow = new OverlayWindow(overlayImages);
+
 
             GlobalKeyboardHook.SetHook(bindings);
-            overlayWindow.Show();
+
+            if (Properties.Settings.Default.EnableOverlayImages)
+            {
+                overlayWindow = new OverlayWindow(overlayImages);
+                overlayWindow.Show();
+            }
         }
 
         protected override void OnClosed(EventArgs e)
         {
             GlobalKeyboardHook.ReleaseHook();
-            overlayWindow.Close();
+
+            if (Properties.Settings.Default.EnableOverlayImages && overlayWindow != null)
+            {
+                overlayWindow.Close();
+            }
+
             base.OnClosed(e);
         }
 
         private void LoadSettings()
         {
-            bindings = new List<KeyboardBinding>()
+            bindings = new List<KeyboardBinding>();
+            
+            if (Properties.Settings.Default.EnableOverlayImages)
             {
-                new KeyboardBinding
+                bindings.Add(new KeyboardBinding
                 {
                     ModifierKey = null,
                     Key = Properties.Settings.Default.PreviousOverlayImageKey,
                     Callback = () => overlayWindow.PreviousImage(),
 
-                },
-                new KeyboardBinding
+                });
+                bindings.Add(new KeyboardBinding
                 {
                     ModifierKey = null,
                     Key = Properties.Settings.Default.NextOverlayImageKey,
                     Callback = () => overlayWindow.NextImage(),
-                },
-            };
-            overlayImages = Properties.Settings.Default.OverlayImages.Split(",").ToList();
+                });
+                overlayImages = Properties.Settings.Default.OverlayImages.Split(",").ToList();
+            }
 
             gameTimer1.Duration = Properties.Settings.Default.Timer1Duration;
             gameTimer2.Duration = Properties.Settings.Default.Timer2Duration;

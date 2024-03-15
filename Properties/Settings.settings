@@ -87,5 +87,8 @@
     <Setting Name="PreviousOverlayImageKey" Type="System.String" Scope="User">
       <Value Profile="(Default)">a</Value>
     </Setting>
+    <Setting Name="EnableOverlayImages" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

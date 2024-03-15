@@ -93,7 +93,7 @@ namespace SimpleTimers.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SimpleTimers;component/controls/gametimer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SimpleTimers;V1.0.0.0;component/controls/gametimer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\GameTimer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
