@@ -325,7 +325,7 @@ namespace SimpleTimers.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-1.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-2.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-3.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-4.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-5.png
+        [global::System.Configuration.DefaultSettingValueAttribute(@"C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-1.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-2.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-3.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-4.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-5.png
 ")]
         public string OverlayImages {
             get {
@@ -398,7 +398,7 @@ namespace SimpleTimers.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.4")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.5")]
         public double OverlayImageOpacity {
             get {
                 return ((double)(this["OverlayImageOpacity"]));
@@ -410,7 +410,7 @@ namespace SimpleTimers.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("control")]
         public string OverlayToggleModifierKey {
             get {
                 return ((string)(this["OverlayToggleModifierKey"]));
@@ -422,13 +422,25 @@ namespace SimpleTimers.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("w")]
         public string OverlayToggleKey {
             get {
                 return ((string)(this["OverlayToggleKey"]));
             }
             set {
                 this["OverlayToggleKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowOverlayImageNumber {
+            get {
+                return ((bool)(this["ShowOverlayImageNumber"]));
+            }
+            set {
+                this["ShowOverlayImageNumber"] = value;
             }
         }
     }

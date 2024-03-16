@@ -78,7 +78,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="OverlayImages" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-1.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-2.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-3.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-4.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\S3W2-5.png
+      <Value Profile="(Default)">C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-1.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-2.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-3.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-4.png,C:\Users\Jeremy\My Drive\D4\Gauntlet S3W2\Route\S3W2-5.png
 </Value>
     </Setting>
     <Setting Name="NextImageModifierKey" Type="System.String" Scope="User">
@@ -97,13 +97,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="OverlayImageOpacity" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">0.4</Value>
+      <Value Profile="(Default)">0.5</Value>
     </Setting>
     <Setting Name="OverlayToggleModifierKey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">control</Value>
     </Setting>
     <Setting Name="OverlayToggleKey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">w</Value>
+    </Setting>
+    <Setting Name="ShowOverlayImageNumber" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

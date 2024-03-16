@@ -32,7 +32,9 @@ namespace SimpleTimers.Windows
         private const int WS_EX_TRANSPARENT = 0x00000020;
         private const int WS_EX_LAYERED = 0x00080000;
 
-        private int imageIndex = 0;
+        private int _imageIndex = 0;
+        private bool _isVisible = true;
+        private bool _showOverlayImageNumber = true;
 
         private List<string> _imageList;
 
@@ -43,20 +45,22 @@ namespace SimpleTimers.Windows
                 GetWindowLong(hwnd, GWL_EXSTYLE) | WS_EX_TRANSPARENT | WS_EX_LAYERED);
         }
 
-        public OverlayWindow(List<string> imageList)
+        public OverlayWindow(List<string> imageList, bool showOverlayImageNumber)
         {
             _imageList = imageList;
+            _showOverlayImageNumber = showOverlayImageNumber;
             InitializeComponent();
             Loaded += new RoutedEventHandler(Window_Loaded);
+
             ShowImage();
         }
 
         public void NextImage()
         {
-            imageIndex++;
-            if (imageIndex >= _imageList.Count)
+            _imageIndex++;
+            if (_imageIndex >= _imageList.Count)
             {
-                imageIndex = _imageList.Count - 1;
+                _imageIndex = _imageList.Count - 1;
             }
 
             ShowImage();
@@ -64,10 +68,10 @@ namespace SimpleTimers.Windows
 
         public void PreviousImage()
         {
-            imageIndex--;
-            if (imageIndex < 0)
+            _imageIndex--;
+            if (_imageIndex < 0)
             {
-                imageIndex = 0;
+                _imageIndex = 0;
             }
 
             ShowImage();
@@ -75,10 +79,41 @@ namespace SimpleTimers.Windows
 
         private void ShowImage()
         {
-            if (_imageList.Count > 0 && imageIndex < _imageList.Count && imageIndex >= 0)
+            if (_imageList.Count > 0 && _imageIndex < _imageList.Count && _imageIndex >= 0)
             {
-                imageDisplay.Source = new BitmapImage(new Uri(_imageList[imageIndex]));
-                imageIndexLabel.Content = (imageIndex + 1).ToString();
+                try
+                {
+
+                    imageDisplay.Source = new BitmapImage(new Uri(_imageList[_imageIndex]));
+                    errorLabel.Visibility = Visibility.Hidden;
+                }
+                catch (Exception e)
+                {
+                    errorLabel.Text = "Error loading image " + _imageList[_imageIndex] + ": " + e.Message;
+                    errorLabel.Visibility = Visibility.Visible;
+                }
+                imageNumberLabel.Content = (_imageIndex + 1).ToString();
+            }
+            imageDisplay.Visibility = Visibility.Visible;
+            imageNumberLabel.Visibility = _showOverlayImageNumber ? Visibility.Visible : Visibility.Hidden;
+        }
+
+        public void HideImage()
+        {
+            imageDisplay.Visibility = Visibility.Hidden;
+            imageNumberLabel.Visibility = Visibility.Hidden;
+        }
+
+        public void ToggleImage()
+        {
+            _isVisible = !_isVisible;
+            if (_isVisible)
+            {
+                ShowImage();
+            }
+            else
+            {
+                HideImage();
             }
         }
 

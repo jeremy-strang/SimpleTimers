@@ -35,7 +35,7 @@ namespace SimpleTimers
 
             if (Properties.Settings.Default.EnableOverlayImages)
             {
-                overlayWindow = new OverlayWindow(overlayImages);
+                overlayWindow = new OverlayWindow(overlayImages, Properties.Settings.Default.ShowOverlayImageNumber);
                 overlayWindow.Show();
             }
         }
@@ -63,80 +63,88 @@ namespace SimpleTimers
             {
                 string? prevModKey = settings.PreviousImageModifierKey != "" ? settings.PreviousImageModifierKey : null;
                 string? nextModKey = settings.NextImageModifierKey != "" ? settings.NextImageModifierKey : null;
+                string? overlayToggleModKey = settings.OverlayToggleModifierKey != "" ? settings.OverlayToggleModifierKey : null;
 
                 bindings.Add(new KeyboardBinding
                 {
                     ModifierKey = prevModKey,
-                    Key = Properties.Settings.Default.PreviousImageKey,
+                    Key = settings.PreviousImageKey,
                     Callback = () => overlayWindow.PreviousImage(),
                 });
 
                 bindings.Add(new KeyboardBinding
                 {
                     ModifierKey = nextModKey,
-                    Key = Properties.Settings.Default.NextImageKey,
+                    Key = settings.NextImageKey,
                     Callback = () => overlayWindow.NextImage(),
                 });
-                overlayImages = Properties.Settings.Default.OverlayImages.Split(",").ToList();
+
+                bindings.Add(new KeyboardBinding
+                {
+                    ModifierKey = overlayToggleModKey,
+                    Key = settings.OverlayToggleKey,
+                    Callback = () => overlayWindow.ToggleImage(),
+                });
+                overlayImages = settings.OverlayImages.Split(",").ToList();
             }
 
-            gameTimer1.Duration = Properties.Settings.Default.Timer1Duration;
-            gameTimer2.Duration = Properties.Settings.Default.Timer2Duration;
-            gameTimer3.Duration = Properties.Settings.Default.Timer3Duration;
-            gameTimer4.Duration = Properties.Settings.Default.Timer4Duration;
-            gameTimer5.Duration = Properties.Settings.Default.Timer5Duration;
-            gameTimer1.Text = Properties.Settings.Default.Timer1Label;
-            gameTimer2.Text = Properties.Settings.Default.Timer2Label;
-            gameTimer3.Text = Properties.Settings.Default.Timer3Label;
-            gameTimer4.Text = Properties.Settings.Default.Timer4Label;
-            gameTimer5.Text = Properties.Settings.Default.Timer5Label;
+            gameTimer1.Duration = settings.Timer1Duration;
+            gameTimer2.Duration = settings.Timer2Duration;
+            gameTimer3.Duration = settings.Timer3Duration;
+            gameTimer4.Duration = settings.Timer4Duration;
+            gameTimer5.Duration = settings.Timer5Duration;
+            gameTimer1.Text = settings.Timer1Label;
+            gameTimer2.Text = settings.Timer2Label;
+            gameTimer3.Text = settings.Timer3Label;
+            gameTimer4.Text = settings.Timer4Label;
+            gameTimer5.Text = settings.Timer5Label;
 
-            if (Properties.Settings.Default.Timer1Enabled)
+            if (settings.Timer1Enabled)
             {
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = Properties.Settings.Default.Timer1ModifierKey,
-                    Key = Properties.Settings.Default.Timer1Keybind,
+                    ModifierKey = settings.Timer1ModifierKey,
+                    Key = settings.Timer1Keybind,
                     Callback = () => StartTimer1(),
                 });
             }
 
-            if (Properties.Settings.Default.Timer2Enabled)
+            if (settings.Timer2Enabled)
             {
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = Properties.Settings.Default.Timer2ModifierKey,
-                    Key = Properties.Settings.Default.Timer2Keybind,
+                    ModifierKey = settings.Timer2ModifierKey,
+                    Key = settings.Timer2Keybind,
                     Callback = () => StartTimer2(),
                 });
             }
 
-            if (Properties.Settings.Default.Timer3Enabled)
+            if (settings.Timer3Enabled)
             {
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = Properties.Settings.Default.Timer3ModifierKey,
-                    Key = Properties.Settings.Default.Timer3Keybind,
+                    ModifierKey = settings.Timer3ModifierKey,
+                    Key = settings.Timer3Keybind,
                     Callback = () => StartTimer3(),
                 });
             }
 
-            if (Properties.Settings.Default.Timer4Enabled)
+            if (settings.Timer4Enabled)
             {
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = Properties.Settings.Default.Timer4ModifierKey,
-                    Key = Properties.Settings.Default.Timer4Keybind,
+                    ModifierKey = settings.Timer4ModifierKey,
+                    Key = settings.Timer4Keybind,
                     Callback = () => StartTimer4(),
                 });
             }
 
-            if (Properties.Settings.Default.Timer5Enabled)
+            if (settings.Timer5Enabled)
             {
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = Properties.Settings.Default.Timer5ModifierKey,
-                    Key = Properties.Settings.Default.Timer5Keybind,
+                    ModifierKey = settings.Timer5ModifierKey,
+                    Key = settings.Timer5Keybind,
                     Callback = () => StartTimer5(),
                 });
             }

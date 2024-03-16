@@ -28,6 +28,7 @@ public class GlobalKeyboardHook
 
     private const int VK_SHIFT = 0x10;
     private const int VK_CONTROL = 0x11;
+    private const int VK_MENU = 0x12;
     private const int VK_A = 0x41;
     private const int VK_B = 0x42;
     private const int VK_C = 0x43;
@@ -112,13 +113,22 @@ public class GlobalKeyboardHook
             int vkCode = Marshal.ReadInt32(lParam);
             bool controlPressed = (GetKeyState(VK_CONTROL) & 0x8000) != 0;
             bool shiftPressed = (GetKeyState(VK_SHIFT) & 0x8000) != 0;
+            bool altPressed = (GetKeyState(VK_MENU) & 0x8000) != 0;
 
-            foreach (var binding in _keyboardBindings)
+           foreach (var binding in _keyboardBindings)
             {
+                Debug.Print("---");
+                Debug.Print("Binding: " + binding.ModifierKey + "+" + binding.Key);
                 bool modPressed =
                     (controlPressed && binding.ModifierKey == "control") ||
                     (shiftPressed && binding.ModifierKey == "shift") ||
-                    (!controlPressed && !shiftPressed && binding.ModifierKey == null);
+                    (altPressed && binding.ModifierKey == "alt") ||
+                    (!controlPressed && !shiftPressed && !altPressed && binding.ModifierKey == null);
+
+                if (KeyLookup.ContainsKey(vkCode))
+                {
+                    Debug.Print("Checking key event, modPressed: " + modPressed + ", altPressed: " + altPressed + " key: " + KeyLookup[vkCode]);
+                }
 
                 if (modPressed && KeyLookup.ContainsKey(vkCode) && KeyLookup[vkCode] == binding.Key)
                 {
