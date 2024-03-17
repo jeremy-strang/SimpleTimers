@@ -12,6 +12,7 @@ public class KeyboardBinding
 {
     public string? ModifierKey { get; set; }
     public string Key { get; set; }
+    public bool PassThrough { get; set; }
     public Action Callback { get; set; }
 }
 
@@ -29,6 +30,16 @@ public class GlobalKeyboardHook
     private const int VK_SHIFT = 0x10;
     private const int VK_CONTROL = 0x11;
     private const int VK_MENU = 0x12;
+    public const int K_0 = 0x30;
+    public const int K_1 = 0x31;
+    public const int K_2 = 0x32;
+    public const int K_3 = 0x33;
+    public const int K_4 = 0x34;
+    public const int K_5 = 0x35;
+    public const int K_6 = 0x36;
+    public const int K_7 = 0x37;
+    public const int K_8 = 0x38;
+    public const int K_9 = 0x39;
     private const int VK_A = 0x41;
     private const int VK_B = 0x42;
     private const int VK_C = 0x43;
@@ -57,6 +68,16 @@ public class GlobalKeyboardHook
     private const int VK_Z = 0x5A;
     private static Dictionary<int, string> KeyLookup = new Dictionary<int, string>
     {
+        { K_0, "0" },
+        { K_1, "1" },
+        { K_2, "2" },
+        { K_3, "3" },
+        { K_4, "4" },
+        { K_5, "5" },
+        { K_6, "6" },
+        { K_7, "7" },
+        { K_8, "8" },
+        { K_9, "9" },
         { VK_A, "a" },
         { VK_B, "b" },
         { VK_C, "c" },
@@ -93,8 +114,7 @@ public class GlobalKeyboardHook
         using (Process curProcess = Process.GetCurrentProcess())
         using (ProcessModule curModule = curProcess.MainModule)
         {
-            _hookID = SetWindowsHookEx(WH_KEYBOARD_LL, _proc,
-                GetModuleHandle(curModule.ModuleName), 0);
+            _hookID = SetWindowsHookEx(WH_KEYBOARD_LL, _proc, GetModuleHandle(curModule.ModuleName), 0);
         }
     }
 
@@ -117,23 +137,23 @@ public class GlobalKeyboardHook
 
            foreach (var binding in _keyboardBindings)
             {
-                Debug.Print("---");
-                Debug.Print("Binding: " + binding.ModifierKey + "+" + binding.Key);
+                //Debug.Print("---");
+                //Debug.Print("Binding: " + binding.ModifierKey + "+" + binding.Key);
                 bool modPressed =
                     (controlPressed && binding.ModifierKey == "control") ||
                     (shiftPressed && binding.ModifierKey == "shift") ||
                     (altPressed && binding.ModifierKey == "alt") ||
                     (!controlPressed && !shiftPressed && !altPressed && binding.ModifierKey == null);
 
-                if (KeyLookup.ContainsKey(vkCode))
-                {
-                    Debug.Print("Checking key event, modPressed: " + modPressed + ", altPressed: " + altPressed + " key: " + KeyLookup[vkCode]);
-                }
+                //if (KeyLookup.ContainsKey(vkCode))
+                //{
+                //    Debug.Print("Checking key event, modPressed: " + modPressed + ", altPressed: " + altPressed + " key: " + KeyLookup[vkCode]);
+                //}
 
                 if (modPressed && KeyLookup.ContainsKey(vkCode) && KeyLookup[vkCode] == binding.Key)
                 {
                     binding.Callback();
-                    handled = true;
+                    handled = !binding.PassThrough;
                 }
             }
         }

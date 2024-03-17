@@ -12,8 +12,10 @@
         AllowsTransparency="True"
         Background="Transparent"
         Topmost="True"
+        WindowState="Maximized"
+        ResizeMode="NoResize"
         Width="400"
-        Height="600">
+        Height="28">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -23,7 +25,14 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <StackPanel VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Top" Grid.Column="0">
             <StackPanel Width="auto" Height="28" Orientation="Horizontal" Margin="0,0,0,10">
                 <Button Name="CloseButton" Content="✕" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Click="CloseButton_Click">
                 </Button>
@@ -31,11 +40,6 @@
                 </Button>
                 <Label Padding="5,2,1,1" Foreground="White" FontSize="12" Visibility="Hidden">Simple Timers</Label>
             </StackPanel>
-            <controls:GameTimer x:Name="gameTimer1" Duration="100" Text="" Visibility="Collapsed"/>
-            <controls:GameTimer x:Name="gameTimer2" Duration="100" Text="" Visibility="Collapsed"/>
-            <controls:GameTimer x:Name="gameTimer3" Duration="100" Text="" Visibility="Collapsed"/>
-            <controls:GameTimer x:Name="gameTimer4" Duration="100" Text="" Visibility="Collapsed"/>
-            <controls:GameTimer x:Name="gameTimer5" Duration="100" Text="" Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
 </Window>

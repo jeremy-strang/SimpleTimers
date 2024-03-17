@@ -1,6 +1,8 @@
 ﻿using Microsoft.Win32;
 using SimpleTimers.Controls;
 using SimpleTimers.Windows;
+using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows;
@@ -25,6 +27,7 @@ namespace SimpleTimers
         private List<KeyboardBinding> bindings;
         private List<string> overlayImages;
         private OverlayWindow overlayWindow;
+        private SettingsWindow settingsWindow;
 
         public MainWindow()
         {
@@ -33,21 +36,15 @@ namespace SimpleTimers
 
             GlobalKeyboardHook.SetHook(bindings);
 
-            if (Properties.Settings.Default.EnableOverlayImages)
-            {
-                overlayWindow = new OverlayWindow(overlayImages, Properties.Settings.Default.ShowOverlayImageNumber);
-                overlayWindow.Show();
-            }
+            overlayWindow = new OverlayWindow(overlayImages, Properties.Settings.Default.ShowOverlayImageNumber);
+            overlayWindow.Show();
         }
 
         protected override void OnClosed(EventArgs e)
         {
             GlobalKeyboardHook.ReleaseHook();
 
-            if (Properties.Settings.Default.EnableOverlayImages && overlayWindow != null)
-            {
-                overlayWindow.Close();
-            }
+            overlayWindow.Close();
 
             base.OnClosed(e);
         }
@@ -57,7 +54,6 @@ namespace SimpleTimers
             bindings = new List<KeyboardBinding>();
 
             var settings = Properties.Settings.Default;
-
 
             if (Properties.Settings.Default.EnableOverlayImages)
             {
@@ -85,100 +81,80 @@ namespace SimpleTimers
                     Key = settings.OverlayToggleKey,
                     Callback = () => overlayWindow.ToggleImage(),
                 });
-                overlayImages = settings.OverlayImages.Split(",").ToList();
+                overlayImages = settings.OverlayImages.Split(",").Where(x => !String.IsNullOrEmpty(x) && File.Exists(x)).ToList();
             }
-
-            gameTimer1.Duration = settings.Timer1Duration;
-            gameTimer2.Duration = settings.Timer2Duration;
-            gameTimer3.Duration = settings.Timer3Duration;
-            gameTimer4.Duration = settings.Timer4Duration;
-            gameTimer5.Duration = settings.Timer5Duration;
-            gameTimer1.Text = settings.Timer1Label;
-            gameTimer2.Text = settings.Timer2Label;
-            gameTimer3.Text = settings.Timer3Label;
-            gameTimer4.Text = settings.Timer4Label;
-            gameTimer5.Text = settings.Timer5Label;
 
             if (settings.Timer1Enabled)
             {
+                string? modKey1 = settings.Timer1ModifierKey != "" ? settings.Timer1ModifierKey : null;
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = settings.Timer1ModifierKey,
+                    ModifierKey = modKey1,
                     Key = settings.Timer1Keybind,
-                    Callback = () => StartTimer1(),
+                    Callback = () => overlayWindow.StartTimer1(),
+                    PassThrough = settings.Timer1PassThrough,
                 });
             }
 
             if (settings.Timer2Enabled)
             {
+                string? modKey2 = settings.Timer2ModifierKey != "" ? settings.Timer2ModifierKey : null;
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = settings.Timer2ModifierKey,
+                    ModifierKey = modKey2,
                     Key = settings.Timer2Keybind,
-                    Callback = () => StartTimer2(),
+                    Callback = () => overlayWindow.StartTimer2(),
+                    PassThrough = settings.Timer2PassThrough,
                 });
             }
 
             if (settings.Timer3Enabled)
             {
+                string? modKey3 = settings.Timer3ModifierKey != "" ? settings.Timer3ModifierKey : null;
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = settings.Timer3ModifierKey,
+                    ModifierKey = modKey3,
                     Key = settings.Timer3Keybind,
-                    Callback = () => StartTimer3(),
+                    Callback = () => overlayWindow.StartTimer3(),
+                    PassThrough = settings.Timer3PassThrough,
                 });
             }
 
             if (settings.Timer4Enabled)
             {
+                string? modKey4 = settings.Timer4ModifierKey != "" ? settings.Timer4ModifierKey : null;
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = settings.Timer4ModifierKey,
+                    ModifierKey = modKey4,
                     Key = settings.Timer4Keybind,
-                    Callback = () => StartTimer4(),
+                    Callback = () => overlayWindow.StartTimer4(),
+                    PassThrough = settings.Timer4PassThrough,
                 });
             }
 
             if (settings.Timer5Enabled)
             {
+                string? modKey5 = settings.Timer5ModifierKey != "" ? settings.Timer5ModifierKey : null;
                 bindings.Add(new KeyboardBinding
                 {
-                    ModifierKey = settings.Timer5ModifierKey,
+                    ModifierKey = modKey5,
                     Key = settings.Timer5Keybind,
-                    Callback = () => StartTimer5(),
+                    Callback = () => overlayWindow.StartTimer5(),
+                    PassThrough = settings.Timer5PassThrough,
                 });
             }
 
-        }
-
-        public void StartTimer1()
-        {
-            gameTimer1.Visibility = Visibility.Visible;
-            gameTimer1.StartTimer();
-        }
-
-        public void StartTimer2()
-        {
-            gameTimer2.Visibility = Visibility.Visible;
-            gameTimer2.StartTimer();
-        }
-
-        public void StartTimer3()
-        {
-            gameTimer3.Visibility = Visibility.Visible;
-            gameTimer3.StartTimer();
-        }
-
-        public void StartTimer4()
-        {
-            gameTimer4.Visibility = Visibility.Visible;
-            gameTimer4.StartTimer();
-        }
-
-        public void StartTimer5()
-        {
-            gameTimer5.Visibility = Visibility.Visible;
-            gameTimer5.StartTimer();
+            if (settings.Timer6Enabled)
+            {
+                string? modKey6 = settings.Timer6ModifierKey != "" ? settings.Timer6ModifierKey : null;
+                bindings.Add(new KeyboardBinding
+                {
+                    ModifierKey = modKey6,
+                    Key = settings.Timer6Keybind,
+                    Callback = () => overlayWindow.StartTimer6(),
+                    PassThrough = settings.Timer6PassThrough,
+                });
+            }
         }
 
         public void NextImage()
@@ -198,35 +174,20 @@ namespace SimpleTimers
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            settingsWindow = new SettingsWindow();
+            GlobalKeyboardHook.ReleaseHook();
+            if (overlayWindow != null)
+            {
+                overlayWindow.Close();
+            }
+            settingsWindow.ShowDialog();
+            LoadSettings();
+            GlobalKeyboardHook.SetHook(bindings);
+            if (Properties.Settings.Default.EnableOverlayImages)
+            {
+                overlayWindow = new OverlayWindow(overlayImages, Properties.Settings.Default.ShowOverlayImageNumber);
+                overlayWindow.Show();
+            }
         }
-
-
-
-        //private void SetWindowPositionToPrimaryMonitor()
-        //{
-        //    // Get the primary screen's working area
-        //    var primaryScreen = Screen.PrimaryScreen.WorkingArea;
-
-        //    // Convert the screen's position from pixels to WPF units
-        //    double dpiX, dpiY;
-        //    var presentationSource = PresentationSource.FromVisual(this);
-        //    if (presentationSource != null) // Ensure the window is connected to a presentation source
-        //    {
-        //        dpiX = 96.0 * presentationSource.CompositionTarget.TransformToDevice.M11;
-        //        dpiY = 96.0 * presentationSource.CompositionTarget.TransformToDevice.M22;
-        //    }
-        //    else
-        //    {
-        //        dpiX = 96.0; // Default DPI; adjust if necessary for your environment
-        //        dpiY = 96.0;
-        //    }
-
-        //    // Set the window's position to the primary monitor
-        //    this.Left = primaryScreen.Left * 96 / dpiX;
-        //    this.Top = primaryScreen.Top * 96 / dpiY;
-        //    this.Width = primaryScreen.Width * 96 / dpiX;
-        //    this.Height = primaryScreen.Height * 96 / dpiY;
-        //}
     }
 }

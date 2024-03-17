@@ -443,5 +443,161 @@ namespace SimpleTimers.Properties {
                 this["ShowOverlayImageNumber"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool RenderOnSecondaryMonitor {
+            get {
+                return ((bool)(this["RenderOnSecondaryMonitor"]));
+            }
+            set {
+                this["RenderOnSecondaryMonitor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Timer1PassThrough {
+            get {
+                return ((bool)(this["Timer1PassThrough"]));
+            }
+            set {
+                this["Timer1PassThrough"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Timer2PassThrough {
+            get {
+                return ((bool)(this["Timer2PassThrough"]));
+            }
+            set {
+                this["Timer2PassThrough"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Timer3PassThrough {
+            get {
+                return ((bool)(this["Timer3PassThrough"]));
+            }
+            set {
+                this["Timer3PassThrough"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Timer4PassThrough {
+            get {
+                return ((bool)(this["Timer4PassThrough"]));
+            }
+            set {
+                this["Timer4PassThrough"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Timer5PassThrough {
+            get {
+                return ((bool)(this["Timer5PassThrough"]));
+            }
+            set {
+                this["Timer5PassThrough"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Timer6PassThrough {
+            get {
+                return ((bool)(this["Timer6PassThrough"]));
+            }
+            set {
+                this["Timer6PassThrough"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string Timer6Keybind {
+            get {
+                return ((string)(this["Timer6Keybind"]));
+            }
+            set {
+                this["Timer6Keybind"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Timer6ModifierKey {
+            get {
+                return ((string)(this["Timer6ModifierKey"]));
+            }
+            set {
+                this["Timer6ModifierKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("7")]
+        public double Timer6Duration {
+            get {
+                return ((double)(this["Timer6Duration"]));
+            }
+            set {
+                this["Timer6Duration"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("center")]
+        public string Timer6Position {
+            get {
+                return ((string)(this["Timer6Position"]));
+            }
+            set {
+                this["Timer6Position"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Timer6Enabled {
+            get {
+                return ((bool)(this["Timer6Enabled"]));
+            }
+            set {
+                this["Timer6Enabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Berserking")]
+        public string Timer6Label {
+            get {
+                return ((string)(this["Timer6Label"]));
+            }
+            set {
+                this["Timer6Label"] = value;
+            }
+        }
     }
 }

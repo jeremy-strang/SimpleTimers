@@ -12,12 +12,33 @@
     <Compile Update="Controls\GameTimer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\HotkeyInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\PartialScreenView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TimerSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\OverlayWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\SettingsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\GameTimer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\HotkeyInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\PartialScreenView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TimerSettings.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
@@ -27,6 +48,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\OverlayWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\SettingsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

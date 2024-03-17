@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="SimpleTimers.Controls.HotkeyInput"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimpleTimers.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="28"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ComboBox Name="timer1ModifierKeyComboBox" MinWidth="100" Grid.Column="0">
+            <ComboBoxItem Content="" IsSelected="True"  />
+            <ComboBoxItem Content="control" />
+            <ComboBoxItem Content="shift" />
+        </ComboBox>
+        <Label Content=" + " Grid.Column="1" Padding="1,1,1,1" HorizontalAlignment="Center" Width="28" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+        <ComboBox Name="timer1KeyComboBox" MinWidth="100" Grid.Column="2">
+            <ComboBoxItem></ComboBoxItem>
+            <ComboBoxItem>a</ComboBoxItem>
+            <ComboBoxItem>b</ComboBoxItem>
+            <ComboBoxItem>c</ComboBoxItem>
+            <ComboBoxItem>d</ComboBoxItem>
+            <ComboBoxItem>e</ComboBoxItem>
+            <ComboBoxItem>f</ComboBoxItem>
+            <ComboBoxItem>g</ComboBoxItem>
+            <ComboBoxItem>h</ComboBoxItem>
+            <ComboBoxItem>i</ComboBoxItem>
+            <ComboBoxItem>j</ComboBoxItem>
+            <ComboBoxItem>k</ComboBoxItem>
+            <ComboBoxItem>l</ComboBoxItem>
+            <ComboBoxItem>m</ComboBoxItem>
+            <ComboBoxItem>n</ComboBoxItem>
+            <ComboBoxItem>o</ComboBoxItem>
+            <ComboBoxItem>p</ComboBoxItem>
+            <ComboBoxItem>q</ComboBoxItem>
+            <ComboBoxItem>r</ComboBoxItem>
+            <ComboBoxItem>s</ComboBoxItem>
+            <ComboBoxItem>t</ComboBoxItem>
+            <ComboBoxItem>u</ComboBoxItem>
+            <ComboBoxItem>v</ComboBoxItem>
+            <ComboBoxItem>w</ComboBoxItem>
+            <ComboBoxItem>x</ComboBoxItem>
+            <ComboBoxItem>y</ComboBoxItem>
+            <ComboBoxItem>z</ComboBoxItem>
+        </ComboBox>
+
+    </Grid>
+</UserControl>

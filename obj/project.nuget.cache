@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kTb6hl4Id94fFUEJ8LuPKfdtwHtzu/wU2Z/1VYtOrpoAWr7vADDSjBaWWE3yEhFdbPJ2+o9rAP9sa1Q/4gnqkA==",
+  "dgSpecHash": "A+rSQbg1LHgKo2dEb8ljCPybh0C19i+d6ZHK+DnRjOJG3faAZfdJPQdh87zdVt2CT5V7bvOdYl2TZkUjF4AHBA==",
   "success": true,
   "projectFilePath": "C:\\Dev\\SimpleTimers\\SimpleTimers.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jeremy\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\Jeremy\\.nuget\\packages\\system.drawing.common\\8.0.3\\system.drawing.common.8.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

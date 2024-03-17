@@ -7,28 +7,36 @@
       "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\windows\\overlaywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:windows\\overlaywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\windows\\overlaywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:windows\\overlaywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\windows\\overlaywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:windows\\overlaywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\controls\\partialscreenview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\partialscreenview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\models\\timerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:models\\timerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\simpletimers.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:simpletimers.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\simpletimers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:simpletimers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\controls\\partialscreenview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\partialscreenview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|C:\\Dev\\SimpleTimers\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\keyboard\\globalkeyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,8 +47,40 @@
       "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\gametimer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\styles\\buttonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:styles\\buttonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\controls\\gametimer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\gametimer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\windows\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:windows\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\windows\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:windows\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\controls\\timersettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\timersettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\controls\\timersettings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\timersettings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\controls\\hotkeyinput.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:controls\\hotkeyinput.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|c:\\dev\\simpletimers\\simpletimers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1949CF76-6DBA-4734-B70A-CE032D2F1D1B}|SimpleTimers.csproj|solutionrelative:simpletimers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +94,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -73,7 +113,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Dev\\SimpleTimers\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAYwCAAAAAAAAAA",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAgwMAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T01:19:01.821Z",
               "IsPinned": true,
@@ -81,7 +121,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
+              "Title": "SettingsWindow.xaml",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Windows\\SettingsWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\SettingsWindow.xaml",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Windows\\SettingsWindow.xaml",
+              "RelativeToolTip": "Windows\\SettingsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-16T00:34:25.961Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SettingsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Windows\\SettingsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\SettingsWindow.xaml.cs",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Windows\\SettingsWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\SettingsWindow.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAzwC0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T01:02:26.968Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OverlayWindow.xaml",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Windows\\OverlayWindow.xaml",
               "RelativeDocumentMoniker": "Windows\\OverlayWindow.xaml",
@@ -100,7 +165,7 @@
               "RelativeDocumentMoniker": "Windows\\OverlayWindow.xaml.cs",
               "ToolTip": "C:\\Dev\\SimpleTimers\\Windows\\OverlayWindow.xaml.cs",
               "RelativeToolTip": "Windows\\OverlayWindow.xaml.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAlwGkAAAAAAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAmwFIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T23:54:22.863Z",
               "IsPinned": true,
@@ -108,48 +173,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "GameTimer.xaml.cs",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\GameTimer.xaml.cs",
               "RelativeDocumentMoniker": "Controls\\GameTimer.xaml.cs",
               "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\GameTimer.xaml.cs",
               "RelativeToolTip": "Controls\\GameTimer.xaml.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAiwDgAAAA7AAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAvwDEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T23:09:17.567Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GlobalKeyboardHook.cs",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Keyboard\\GlobalKeyboardHook.cs",
               "RelativeDocumentMoniker": "Keyboard\\GlobalKeyboardHook.cs",
               "ToolTip": "C:\\Dev\\SimpleTimers\\Keyboard\\GlobalKeyboardHook.cs",
               "RelativeToolTip": "Keyboard\\GlobalKeyboardHook.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwIEAAACGAAAA",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAswIYAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T21:59:31.95Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ButtonStyles.xaml",
-              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Styles\\ButtonStyles.xaml",
-              "RelativeDocumentMoniker": "Styles\\ButtonStyles.xaml",
-              "ToolTip": "C:\\Dev\\SimpleTimers\\Styles\\ButtonStyles.xaml",
-              "RelativeToolTip": "Styles\\ButtonStyles.xaml",
+              "DocumentIndex": 17,
+              "Title": "TimerSettings.xaml",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\TimerSettings.xaml",
+              "RelativeDocumentMoniker": "Controls\\TimerSettings.xaml",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\TimerSettings.xaml",
+              "RelativeToolTip": "Controls\\TimerSettings.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-14T22:12:48.517Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-16T01:15:03.835Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
+              "Title": "TimerSettings.xaml.cs",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\TimerSettings.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\TimerSettings.xaml.cs",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\TimerSettings.xaml.cs",
+              "RelativeToolTip": "Controls\\TimerSettings.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T01:15:23.798Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Settings.settings",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "Properties\\Settings.settings",
@@ -157,23 +232,106 @@
               "RelativeToolTip": "Properties\\Settings.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
               "WhenOpened": "2024-03-15T23:03:23.358Z",
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PartialScreenView.xaml",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\PartialScreenView.xaml",
+              "RelativeDocumentMoniker": "Controls\\PartialScreenView.xaml",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\PartialScreenView.xaml",
+              "RelativeToolTip": "Controls\\PartialScreenView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-17T19:09:47.008Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PartialScreenView.xaml.cs",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\PartialScreenView.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\PartialScreenView.xaml.cs",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\PartialScreenView.xaml.cs",
+              "RelativeToolTip": "Controls\\PartialScreenView.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAqwCoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T19:10:46.473Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TimerConfig.cs",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Models\\TimerConfig.cs",
+              "RelativeDocumentMoniker": "Models\\TimerConfig.cs",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Models\\TimerConfig.cs",
+              "RelativeToolTip": "Models\\TimerConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T19:24:09.154Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HotkeyInput.xaml",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\HotkeyInput.xaml",
+              "RelativeDocumentMoniker": "Controls\\HotkeyInput.xaml",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\HotkeyInput.xaml",
+              "RelativeToolTip": "Controls\\HotkeyInput.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-16T02:34:13.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameTimer.xaml",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\Controls\\GameTimer.xaml",
+              "RelativeDocumentMoniker": "Controls\\GameTimer.xaml",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\Controls\\GameTimer.xaml",
+              "RelativeToolTip": "Controls\\GameTimer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-16T01:20:34.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-16T23:06:53.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Dev\\SimpleTimers\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Dev\\SimpleTimers\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwJwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-16T00:35:19.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SimpleTimers",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\SimpleTimers.csproj",
               "RelativeDocumentMoniker": "SimpleTimers.csproj",
               "ToolTip": "C:\\Dev\\SimpleTimers\\SimpleTimers.csproj",
               "RelativeToolTip": "SimpleTimers.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-15T05:55:45.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-15T05:55:45.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "SimpleTimers.csproj",
               "DocumentMoniker": "C:\\Dev\\SimpleTimers\\SimpleTimers.csproj",
               "RelativeDocumentMoniker": "SimpleTimers.csproj",
@@ -181,8 +339,7 @@
               "RelativeToolTip": "SimpleTimers.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-15T05:12:26.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-15T05:12:26.225Z"
             }
           ]
         }

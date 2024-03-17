@@ -1,6 +1,10 @@
 ﻿
 
 FC:\Dev\SimpleTimers\Controls\GameTimer.xaml;;
+FC:\Dev\SimpleTimers\Controls\HotkeyInput.xaml;;
+FC:\Dev\SimpleTimers\Controls\PartialScreenView.xaml;;
+FC:\Dev\SimpleTimers\Controls\TimerSettings.xaml;;
 FC:\Dev\SimpleTimers\MainWindow.xaml;;
 FC:\Dev\SimpleTimers\Windows\OverlayWindow.xaml;;
+FC:\Dev\SimpleTimers\Windows\SettingsWindow.xaml;;
 

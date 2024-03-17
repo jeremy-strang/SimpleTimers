@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleTimers.Windows"
+        xmlns:controls="clr-namespace:SimpleTimers.Controls"
         mc:Ignorable="d"
         Title="OverlayWindow"
         WindowStartupLocation="Manual" Left="0" Top="30"
@@ -16,15 +17,45 @@
         Height="1076"
         Topmost="True">
     <Grid>
-        <TextBlock Name="errorLabel" Text="" FontSize="14" Background="Transparent" Height="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="600" Foreground="#FFE85D5D" Visibility="Hidden" TextWrapping="Wrap"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="320"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="320"/>
+        </Grid.RowDefinitions>
 
-        <Label Name="imageNumberLabel" Panel.ZIndex="4" Foreground="White" FontSize="36"
-               VerticalAlignment="Center" HorizontalAlignment="Left"  Opacity="0.6" Margin="0,0,0,0"></Label>
+        <StackPanel VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" Grid.RowSpan="3">
+            <controls:GameTimer x:Name="gameTimer1" Duration="100" Text="" Visibility="Collapsed"/>
+            <controls:GameTimer x:Name="gameTimer2" Duration="100" Text="" Visibility="Collapsed"/>
+            <controls:GameTimer x:Name="gameTimer3" Duration="100" Text="" Visibility="Collapsed"/>
+            <controls:GameTimer x:Name="gameTimer4" Duration="100" Text="" Visibility="Collapsed"/>
+            <controls:GameTimer x:Name="gameTimer5" Duration="100" Text="" Visibility="Collapsed"/>
+            <controls:GameTimer x:Name="gameTimer6" Duration="100" Text="" Visibility="Collapsed"/>
+        </StackPanel>
+
+        <TextBlock Name="errorLabel" Text="" FontSize="14" Background="Transparent" Height="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="600" Foreground="#FFE85D5D" Visibility="Hidden" TextWrapping="Wrap"/>
+        
+        <Label Name="imageNumberLabel" Panel.ZIndex="4" Foreground="White" FontSize="28"
+               VerticalAlignment="Top" HorizontalAlignment="Left"  Opacity="0.6" Margin="0,36,0,0"></Label>
         
         <Image Name="imageDisplay"
-               Opacity="0.35"
+               Opacity="0.4"
                IsHitTestVisible="False"
                MaxHeight="450" MaxWidth="800"
-               VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0"/>
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,38,0,0"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="2" Opacity="0.6">
+            <controls:PartialScreenView Width="70" Height="70" CaptureX="1029" CaptureY="1299" CaptureHeight="84" CaptureWidth="84"/>
+            <controls:PartialScreenView Width="70" Height="70" CaptureX="1615" CaptureY="1185" CaptureHeight="70" CaptureWidth="70"/>
+        </StackPanel>
     </Grid>
 </Window>
